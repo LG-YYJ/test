@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 function start() {
   var btnYes = document.querySelector(".btn--yes");
-  var btnNo = document.querySelector(".btn--no");
+  // var btnNo = document.querySelector(".btn--no");
   var popup = document.querySelector(".modal");
   var overlay = document.querySelector(".modal__overlay");
   var btnClose = document.querySelector(".btn-close");
@@ -40,7 +40,7 @@ function start() {
             <i class="ti-face-smile"></i>
         </p>`;
   btnYes.innerHTML = `<i class="ti-thumb-up"></i> ${CONFIGDATA.buttonYes}`;
-  btnNo.innerHTML = `<i class="ti-thumb-down"></i> ${CONFIGDATA.buttonNo}`;
+  // btnNo.innerHTML = `<i class="ti-thumb-down"></i> ${CONFIGDATA.buttonNo}`;
   headerModar.innerHTML = `${CONFIGDATA.titleModar} <i class="ti-heart"></i>`;
   desccriptionModar.innerHTML = `${CONFIGDATA.descriptionModar}`;
 
@@ -55,17 +55,17 @@ function start() {
     popup.classList.remove("show");
   };
 
-  btnNo.onclick = () => {
-    btnNo.style.top = 100 + "px";
-    btnYes.style.top = 280 + "px";
-  };
+  // btnNo.onclick = () => {
+  //   btnNo.style.top = 100 + "px";
+  //   btnYes.style.top = 280 + "px";
+  // };
 
-  btnNo.onmouseover = (e) => {
-    var x = Math.random() * e.relatedTarget.clientHeight * 0.9;
-    var y = Math.random() * e.relatedTarget.clientWidth * 0.9;
-    btnNo.style.top = x + "px";
-    btnNo.style.right = y + "px";
-  };
+  // btnNo.onmouseover = (e) => {
+  //   var x = Math.random() * e.relatedTarget.clientHeight * 0.9;
+  //   var y = Math.random() * e.relatedTarget.clientWidth * 0.9;
+  //   btnNo.style.top = x + "px";
+  //   btnNo.style.right = y + "px";
+  // };
 }
 
 start();
